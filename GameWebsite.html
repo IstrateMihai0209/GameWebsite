@@ -1,0 +1,162 @@
+<!doctype html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="Adventure in Belens Forest">
+	<meta name="keywords" content="Belens Forest, Game, 2D, Platformer, GameMaker, Adventure, Game Design,
+	Videogame, Free, Action, RPG, Metroidvania">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow">
+	
+	<!-- <base href="file:///E:/GameWebsite/GameWebsite.html"> -->
+	
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="icon_zXm_icon.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+	<title> Belens Forest </title>
+</head>
+
+<body>
+
+<div id="wrapper">
+	<div id="center-wrapper">
+	<header>
+		<div id="firstRow">
+		<a href="GameWebsite.html">
+			<img id="mainLogo" src="LogoBFTransparent.png" alt="Main Logo">
+		</a>
+		</div>
+	</header>
+	
+	<nav>
+		<p id="nav-bar">
+			<a href="google.com" class="nav-links"> Contact </a>
+			<a href="GameWebsite.html" class="nav-links"> Home </a>
+			<a href="https://ownz.itch.io/belens-forest" class="nav-links"> Download </a>
+			<a href="google.com" class="nav-links"> About </a>
+		</p>
+	</nav>
+	
+	<main>
+		<section>
+			<article id="first">
+				<h2 class="game-title"> Belens Forest </h2>
+				<h4 id="game-intro"> Wander around an empty forest and find out what's going on with your friend. </h4>
+				
+				<p id="main-content"><strong>
+				A platformer that I've made using different sprites from Itch.io community.
+					While developing the game, I thought about what would make the player interested in exploring the world.</strong>
+				</p>	
+			</article>
+		</section>
+		
+		<section>
+			<article id="second">
+				<h2 id="itch"> Visit Belens Forest Itch.io Page </h2>
+				<a href="https://ownz.itch.io/belens-forest"> <img src="itch.io.png" alt="itch.io" id="itchlogo"> </a>
+				<a href="https://ownz.itch.io/belens-forest" class="itchlink"><h3> Belens Forest </h3>
+				<p> A short platformer with some weird mechanics </p> </a>
+				<div id="slideshowcontainer"> 
+					<div class="slides fade">
+						<img src="image1.png" alt="game" class="itchimage">
+					</div>
+					
+					<div class="slides fade">
+						<img src="image2.png" alt="game" class="itchimage">
+					</div>
+					
+					<div class="slides fade">
+						<img src="image3.png" alt="game" class="itchimage">
+					</div>
+					
+					<div class="slides fade">
+						<img src="image4.png" alt="game" class="itchimage">
+					</div>
+				</div>
+				
+				<div style="text-align:center; margin-left:10px;">
+					<span class="dot" onClick="current_slide(1)"></span>
+					<span class="dot" onClick="current_slide(2)"></span>
+					<span class="dot" onClick="current_slide(3)"></span>
+					<span class="dot" onClick="current_slide(4)"></span>
+				</div>
+				
+			</article>
+		</section>
+		
+		<aside id="controls">
+			<div id="aside-controls">
+				<h6> Controls: </h6>
+				<ul>
+					<li class="controls-list"> ◘ W, A, S, D to move </li>
+					<li class="controls-list"> ◘ J for Basic Attack </li>
+					<li class="controls-list"> ◘ K to use Shield </li>
+					<li class="controls-list"> ◘ I to open Inventory </li>
+					<li class="controls-list"> ◘ N to use the Firespin </li>
+					<li class="controls-list"> ◘ M to use the Sunburn </li>
+					<li class="controls-list"> ◘ H to drink a Health Potion </li>
+				</ul>
+			</div>
+			<div id="animation"></div>
+			<div id="firespin-animation"></div>
+			<!--<img id="audio-image" src="music.png" style="width:300px; height:300px;">-->
+			<div class="container gradient">
+         
+				<img class="cover" src="images/cover.jpg" alt="">
+				
+				<audio id="pl" src="NotAFriendlyForest.wav"></audio>
+				<div class="player">
+				
+					<input type="button" class="button gradient" id="play">
+				 
+					<input type="range" id="seek" value="0" max="document.getElementById('pl').duration;">
+					<img src="volume-1.png" id="volume-icon" style="width:40px; height:20px;">
+					<input type="range" id="volume-slider" value="50" max="100" min="0">
+			 
+				</div><!-- / player -->
+				 
+			</div><!-- / Container-->
+		</aside>
+	
+		<section>
+			<article id="third">	
+				<div class="template">
+					<h6 class="templatetext">Sunburn</h6>
+					<img src="sunburn.png" class="templatepic">
+				</div>
+
+				<div class="template">
+					<h6 class="templatetext">Firespin</h6>
+					<img src="firespin.png" class="templatepic">
+				</div>
+
+				<div class="template">
+					<h6 class="templatetext">Firewave</h6>
+					<img src="firewave.png" class="templatepic">
+				</div>
+					
+				<br style="clear:left;"/>
+			</article>
+		</section>
+	
+	</main>
+
+	</div>
+	<footer>
+		<a href="GameWebsite.html" class="footer-link"> Home </a>
+		<a href="" class="footer-link"> About </a>
+		<a href="" class="footer-link"> Contact </a>
+		<a href="" class="footer-link"> Mail </a>
+		<h2 id="footer-copy">&copy;Copyright 2020 </h2>
+	</footer>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
