@@ -218,7 +218,7 @@ aside#controls
 div#aside-controls
 {
 	border:30px solid transparent;
-	border-image:url(imgs/aside-border2.png) 60 round;
+	border-image:url(aside-border2.png) 60 round;
 }
 
 ul {padding: 0;}
@@ -290,7 +290,7 @@ div#template-container
 div.template
 {
     width:20%;
-    background-image:url(imgs/template.png);
+    background-image:url(template.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
     margin:20px 6.4% 20px 6.4%;
@@ -434,9 +434,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#292929', end
 	cursor:pointer;
 }
 
-input#play {background-image:url(imgs/play.png);}
+input#play {background-image:url(play.png);}
 
-input#mute {background-image:url(imgs/pause.png);}	
+input#mute {background-image:url(pause.png);}	
 
  
 input[type="range"] {
@@ -555,7 +555,7 @@ input::-webkit-slider-thumb {
 	div.template
 	{
 		display:inline-block;
-		background-image:url(imgs/template-mobile.png);
+		background-image:url(template-mobile.png);
 		width:15%;
 		height:10px;
 		clear:both;
